@@ -15,7 +15,7 @@ const imgIcon = document.getElementById('img')
 
 
 function apiCall() {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName()}&appid=278542422e1cc8b31a0e7fae20c3bbdc&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName()}&appid=278542422e1cc8b31a0e7fae20c3bbdc&units=metric`)
         .then(res => res.json())
         .then(data => {
             const cityName = data.name;
